@@ -1,0 +1,42 @@
+/* ==========================================
+   ESTILOS PARA EL CARRUSEL DE ANIME
+   ========================================== */
+
+/* 1. Control de tamaño y proporción de las imágenes */
+.img-carrusel {
+  height: 550px !important; /* Altura ideal para pantallas de PC */
+  object-fit: cover;        /* Recorta y llena el espacio sin deformar */
+  object-position: center top; /* Centra la imagen priorizando la parte superior (ideal para banners) */
+}
+
+/* 2. Estilo para los textos (Títulos y descripciones) */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente para legibilidad */
+  backdrop-filter: blur(4px);    /* Ligero efecto de desenfoque al fondo del texto */
+  border-radius: 10px;           /* Bordes redondeados para la caja de texto */
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto 20px auto;      /* Centra la caja y la separa un poco del borde inferior */
+}
+
+.carousel-caption h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #27f1e1a9; /* Un toque amarillo/dorado estilo anime para los títulos */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* 3. Personalización de los indicadores (las rayitas de abajo) */
+.carousel-indicators [data-bs-slide-to] {
+  background-color: #ffc107 !important; /* Cambia las líneas a color amarillo */
+  width: 35px;
+  height: 5px;
+  border-radius: 3px;
+}
