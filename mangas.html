@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animag - Mangas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="mangas.css">
+    <link rel="icon" type="image/png" href="imagenes/logo.jpeg">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg mi-nav-custom">
+  <div class="container-fluid">
+    <img src="imagenes/logo.jpeg" alt="Logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mi_lista.html">Mi lista</a>
+        </li>
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="shonen.html">Shonen</a></li>
+            <li><a class="dropdown-item" href="seinen.html">Seinen</a></li>
+            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+            <li><a class="dropdown-item" href="#">Accion</a></li>
+            <li><a class="dropdown-item" href="#">Comedia</a></li>
+            <li><a class="dropdown-item" href="#">Ciencia Ficcion</a></li>
+            <li><a class="dropdown-item" href="#">Aventuras</a></li>
+            <li><a class="dropdown-item" href="#">Deportes</a></li>
+            <li><a class="dropdown-item" href="#">Isekai</a></li>
+            <li><a class="dropdown-item" href="#">Shonen</a></li>
+            <li><a class="dropdown-item" href="#">Recuentos de la vida</a></li>
+            <li><hr class="dropdown-divider"></li> <li><a class="dropdown-item" href="#">De la A - Z</a></li>
+          </ul>
+        </li>
+      </ul>
+
+     </ul>
+     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="dropdownBtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Mangas
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item dropdown-select" href="Index.html">Anime</a></li>
+        <li><a class="dropdown-item dropdown-select" href="mangas.html">Manga</a></li>
+      </ul>
+    </li>
+  </ul>
+    </li>
+       
+      </ul>
+      <form class="d-flex" role="search">
+  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+  <button class="btn btn-buscar-custom" type="submit">Search</button>
+</form>
+    </div>
+  </div>
+ 
+</nav>
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/chainsawmanMANGABANNER.jpg" class="d-block w-100 img-carrusel" alt="Neon Genesis Evangelion">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Chainsaw Man</h5>
+        <p>Denji es un chico sin un duro que se deja la piel trabajando como Devil Hunter junto a su perro demoníaco Pochita</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/BleachMANGABANNER.jpg" class="d-block w-100 img-carrusel" alt="Kimetsu No Yaiba">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Bleach</h5>
+        <p>El estudiante de secundaria Ichigo Kurosaki, que tiene la capacidad de ver fantasmas</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/vinlandsagaMANGABANNER.jpg" class="d-block w-100 img-carrusel" alt="Jujutsu Kaisen">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Vinland Saga</h5>
+        <p>Thorfinn emprende un viaje con el asesino de su padre para vengarse y terminar su vida en un duelo como guerrero honorable</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="container my-5">
+  <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-4 justify-content-center">
+    
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/Otonashi's RulesCARD.jpg" class="card-img-top img-carta" alt="Otonashi's Rules">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Otonashi's Rules</h5>
+          <a href="OtonashiMANGA.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/chainsawmanCARD.jpeg" class="card-img-top img-carta" alt="chainsaw man">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">CHAINSAW MAN</h5>
+          <a href="chainsawMA.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/BORUTO - TWO BLUE VORTEX -CARD.jpg" class="card-img-top img-carta" alt="polosopuestos">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">BORUTO - TWO BLUE VORTEX -</h5>
+          <a href="borutoMANGA.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/Smiley & Lively☆Your Girl HappyCARD.jpg" class="card-img-top img-carta" alt="Smiley & Lively☆Your Girl Happy">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Smiley & Lively☆Your Girl Happy</h5>
+          <a href="smileyMANGA.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+<div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/Dandadan.jpg" class="card-img-top img-carta" alt="dandadan">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Dandadan</h5>
+          <a href="dandadan.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/SAKAMOTO DAYScard.jpg" class="card-img-top img-carta" alt="dragon ball">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">SAKAMOTO DAYS</h5>
+          <a href="days.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/ONE PIECEcard.jpg" class="card-img-top img-carta" alt="ONE PIECE">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">ONE PIECE</h5>
+          <a href="piece.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/La caja azulCARD.jpg" class="card-img-top img-carta" alt="La caja azul.">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Blue Box</h5>
+          <a href="blue.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/SPY x FAMILYCARD.jpg" class="card-img-top img-carta" alt="SPY x FAMILY">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">SPY x FAMILY</h5>
+          <a href="spy.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/bleachCARDMANGA.jpg" class="card-img-top img-carta" alt="Bleach">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Bleach</h5>
+          <a href="bleachMANGA.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div> </div> 
+<footer class="bg-dark text-light py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">&copy; © 2026 <strong>Animag</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* ==========================================
+   ESTILOS PARA EL LECTOR VERTICAL DE 6 PÁGINAS
+   ========================================== */
+
+.lector-vertical {
+  max-width: 720px;         /* Evita que el manga se estire feo en pantallas de PC */
+  background-color: #111111;/* Fondo oscuro para que los paneles en blanco y negro resalten */
+  padding: 15px;            /* Espaciado interno como un marco */
+  border-radius: 12px;      /* Bordes redondeados consistentes con tu diseño */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+.img-manga {
+  display: block;
+  width: 100%;              /* Cada página ocupa todo el ancho del contenedor */
+  height: auto;             /* Mantiene la proporción perfecta del dibujo sin deformar */
+  margin-bottom: 12px;      /* Separación constante entre cada página */
+}
+
+/* Evita que la última página tenga espacio en blanco abajo por el margen */
+.img-manga:last-child {
+  margin-bottom: 0;
+}
+
+/* Ajustes especiales para que en celulares sea 100% cómodo */
+@media (max-width: 768px) {
+  .lector-vertical {
+    max-width: 100%;        /* Ocupa todo el ancho de la pantalla del celular */
+    padding: 0;             /* Quitamos bordes para aprovechar cada píxel */
+    border-radius: 0;       /* Esquinas rectas en móvil para simular App nativa */
+  }
+  
+  .img-manga {
+    margin-bottom: 4px;     /* Reducimos el espacio entre páginas en móviles */
+  }
+}
+
+body {
+  background-color: #b8c2c1a9;
+}
+
+nav {
+  background-color: #1a1a1a;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #47588f;
+}
+.navbar-brand {
+  color: #ffffff;
+}
+.navbar-brand:hover {
+  color: #47588f;
+}
+
+.btn-buscar-custom {
+  color: #47588f;
+  background-color: transparent;
+  border: 1px solid #47588f;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-buscar-custom:hover {
+  color: #000000;
+  background-color: #2384d3;
+  border-color: #2384d3;
+  cursor: pointer;
+}

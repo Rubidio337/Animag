@@ -1,0 +1,65 @@
+.contenedor-video-anime {
+  max-width: 750px;           /* Tamaño ideal para que no ocupe toda la pantalla en PC */
+  background-color: #000000;  /* Fondo negro de respaldo mientras carga */
+  border-radius: 16px;        /* Esquinas redondeadas idénticas a las tarjetas */
+  overflow: hidden;           /* Obliga al video a respetar las esquinas redondeadas */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombrado suave para darle profundidad */
+  border: 1px solid #e0e0e0;  /* Borde fino sutil que combina con tu bloque de reseña */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto hover */
+}
+
+/* Efecto visual al pasar el mouse sobre el reproductor */
+.contenedor-video-anime:hover {
+  transform: translateY(-4px); /* Se eleva un poco, igual que tus cartas */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); /* La sombra se intensifica */
+}
+
+/* Estilos directos para la etiqueta video */
+.video-anime {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* Asegura que el video llene el contenedor perfectamente */
+  display: block;
+}
+
+/* Ajuste rápido para los controles nativos en algunos navegadores */
+.video-anime::-webkit-media-controls-panel {
+  background-image: linear-gradient(transparent, rgba(0,0,0,0.7)) !important; /* Degradado oscuro elegante en la barra de controles */
+}
+
+body {
+  background-color: #b8c2c1a9   ;
+}
+
+nav {
+  background-color: #1a1a1a;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #47588f;
+}
+.navbar-brand {
+  color: #ffffff;
+}
+.navbar-brand:hover {
+  color: #47588f;
+}
+
+.btn-buscar-custom {
+  color: #47588f;
+  background-color: transparent;
+  border: 1px solid #47588f;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-buscar-custom:hover {
+  color: #000000;
+  background-color: #2384d3;
+  border-color: #2384d3;
+  cursor: pointer;
+}

@@ -1,0 +1,104 @@
+.carta-anime {
+  width: 13rem;               /* Tamaño más pequeño y compacto */
+  background-color: #1a1a1a;  /* Fondo oscuro para que combine con el estilo anime */
+  border: 1px solid #333;     /* Borde sutil */
+  border-radius: 12px;        /* Bordes más redondeados */
+  overflow: hidden;           /* Evita que la imagen se salga de las esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave de fondo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto al pasar el mouse por encima (Hover) */
+.carta-anime:hover {
+  transform: translateY(-8px); /* La tarjeta sube un poco */
+  box-shadow: 0 12px 20px rgba(255, 193, 7, 0.2); /* Sombra dorada brillante */
+  border-color: #47588f;       /* El borde cambia a color dorado */
+}
+
+/* Control de la imagen dentro de la tarjeta */
+.img-carta {
+  height: 250px;              /* Altura fija para que todas tus portadas midan igual */
+  object-fit: cover;          /* Recorta la portada perfectamente sin deformarla */
+}
+
+/* El texto del título */
+.carta-anime .card-title {
+  color: #ffffff;
+  font-size: 0.95rem;         /* Letra un poco más pequeña acorde a la tarjeta */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
+  /* Si el título es muy largo, esto añade "..." al final para que no rompa el diseño: */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* El cuerpo de la tarjeta (contenedor del texto y botón) */
+.carta-anime .card-body {
+  padding: 12px;
+  background-color: #1e1e1e;
+}
+
+/* Personalización del botón 'Reproducir' */
+.btn-reproducir {
+  display: block;
+  width: 100%;
+  background-color: #47588f;  /* Botón amarillo dorado */
+  color: #000000;
+  border: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 0;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-reproducir:hover {
+  background-color: #2384d3;  /* Un amarillo más oscuro al pasar el mouse */
+  color: #000000;
+}
+
+h1 {
+    font-size: 3rem;
+  text-align: center;
+}
+
+body {
+  background-color: #b8c2c1a9;
+}
+
+nav {
+  background-color: #1a1a1a;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #47588f;
+}
+.navbar-brand {
+  color: #ffffff;
+}
+.navbar-brand:hover {
+  color: #47588f;
+}
+
+.btn-buscar-custom {
+  color: #47588f;
+  background-color: transparent;
+  border: 1px solid #47588f;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-buscar-custom:hover {
+  color: #000000;
+  background-color: #2384d3;
+  border-color: #2384d3;
+  cursor: pointer;
+}

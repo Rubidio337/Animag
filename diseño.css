@@ -1,28 +1,23 @@
-/* ==========================================
-   ESTILOS PARA EL CARRUSEL DE ANIME
-   ========================================== */
-
-/* 1. Control de tamaño y proporción de las imágenes */
+/*carrusel*/
 .img-carrusel {
-  height: 550px !important; /* Altura ideal para pantallas de PC */
-  object-fit: cover;        /* Recorta y llena el espacio sin deformar */
-  object-position: center top; /* Centra la imagen priorizando la parte superior (ideal para banners) */
+  height: 550px;
+  object-fit: cover;
+  object-position: center top;
 }
 
-/* 2. Estilo para los textos (Títulos y descripciones) */
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente para legibilidad */
-  backdrop-filter: blur(4px);    /* Ligero efecto de desenfoque al fondo del texto */
-  border-radius: 10px;           /* Bordes redondeados para la caja de texto */
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
   padding: 20px;
   max-width: 700px;
-  margin: 0 auto 20px auto;      /* Centra la caja y la separa un poco del borde inferior */
+  margin: 0 auto 20px auto;
 }
 
 .carousel-caption h5 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #27f1e1a9; /* Un toque amarillo/dorado estilo anime para los títulos */
+  color: #27f1e1a9;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -33,10 +28,104 @@
   margin-bottom: 0;
 }
 
-/* 3. Personalización de los indicadores (las rayitas de abajo) */
 .carousel-indicators [data-bs-slide-to] {
-  background-color: #ffc107 !important; /* Cambia las líneas a color amarillo */
+  background-color: #47588f;
   width: 35px;
   height: 5px;
   border-radius: 3px;
+}
+
+/*tarjetas*/
+.carta-anime {
+  width: 13rem;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.carta-anime:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(255, 193, 7, 0.2);
+  border-color: #0741ff;
+}
+
+.img-carta {
+  height: 250px;
+  object-fit: cover;
+}
+
+.carta-anime .card-title {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carta-anime .card-body {
+  padding: 12px;
+  background-color: #1e1e1e;
+}
+
+.btn-reproducir {
+  display: block;
+  width: 100%;
+  background-color: #47588f;
+  color: #000000;
+  border: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 0;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-reproducir:hover {
+  background-color: #2384d3;
+  color: #000000;
+}
+
+body {
+  background-color: #b8c2c1a9;
+}
+
+nav {
+  background-color: #1a1a1a;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #47588f;
+}
+.navbar-brand {
+  color: #ffffff;
+}
+.navbar-brand:hover {
+  color: #47588f;
+}
+
+.btn-buscar-custom {
+  color: #47588f;
+  background-color: transparent;
+  border: 1px solid #47588f;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-buscar-custom:hover {
+  color: #000000;
+  background-color: #2384d3;
+  border-color: #2384d3;
+  cursor: pointer;
 }

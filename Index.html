@@ -7,32 +7,33 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="diseño.css">
+    <link rel="icon" type="image/png" href="imagenes/logo.jpeg">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg mi-nav-custom">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">logo</a>
+  <img src="imagenes/logo.jpeg" alt="Logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" aria-current="page" href="Index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="mi_lista.html">Mi lista</a>
         </li>
 
          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorías
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Shonen</a></li>
-            <li><a class="dropdown-item" href="#">Seinen</a></li>
-            <li><a class="dropdown-item" href="#">Romance</a></li>
+            <li><a class="dropdown-item" href="shonen.html">Shonen</a></li>
+            <li><a class="dropdown-item" href="seinen.html">Seinen</a></li>
+            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
             <li><a class="dropdown-item" href="#">Accion</a></li>
             <li><a class="dropdown-item" href="#">Comedia</a></li>
             <li><a class="dropdown-item" href="#">Ciencia Ficcion</a></li>
@@ -49,12 +50,12 @@
      </ul>
      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="dropdownBtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <a class="nav-link dropdown-toggle" id="dropdownBtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Anime
       </a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item dropdown-select" href="#">Anime</a></li>
-        <li><a class="dropdown-item dropdown-select" href="#">Manga</a></li>
+        <li><a class="dropdown-item dropdown-select" href="Index.html">Anime</a></li>
+        <li><a class="dropdown-item dropdown-select" href="mangas.html">Manga</a></li>
       </ul>
     </li>
   </ul>
@@ -63,22 +64,10 @@
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-buscar-custom" type="submit">Search</button>
       </form>
     </div>
   </div>
-  <script>document.querySelectorAll('.dropdown-select').forEach(item => {
-  item.addEventListener('click', function(e) {
-    // Evita que el enlace recargue la página si el href es "#"
-    e.preventDefault(); 
-    
-    // Captura el texto de la opción seleccionada
-    const textoSeleccionado = this.textContent;
-    
-    // Cambia el texto del botón principal
-    document.getElementById('dropdownBtn').textContent = textoSeleccionado;
-  });
-});</script>
 </nav>
 
 
@@ -120,5 +109,118 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+
+<div class="container my-5">
+  <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-4 justify-content-center">
+    
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/POLOSopuestoscarta.jpg" class="card-img-top img-carta" alt="polosopuestos">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Seihantai na Kimi to Boku</h5>
+          <a href="polos.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/hajimeNohipoCARD.jpg" class="card-img-top img-carta" alt="hajime no hipo">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Hajime no Ippo</h5>
+          <a href="hipo.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/BleachCARD.jpg" class="card-img-top img-carta" alt="polosopuestos">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Bleach</h5>
+          <a href="Bleach.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/Darling in the franxxCARD.jpg" class="card-img-top img-carta" alt="Darling in the franxx">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Darling in the Franxx</h5>
+          <a href="darling.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+<div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/Golden BoyCARD.jpg" class="card-img-top img-carta" alt="GoldenBoy">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Golden Boy</h5>
+          <a href="Goldenboy.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/DragonballCARD.jpg" class="card-img-top img-carta" alt="dragon ball">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Dragon Ball Z Kai</h5>
+          <a href="dragon.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/drstoneCARD.jpg" class="card-img-top img-carta" alt="drsrtone">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Dr Stone</h5>
+          <a href="stone.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/fire forceCARD.jpg" class="card-img-top img-carta" alt="FIre force">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Fire Force</h5>
+          <a href="Fireforce.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/mushoku tenseiCARD.jpg" class="card-img-top img-carta" alt="mushoku Tensei">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Mushoku Tensei</h5>
+          <a href="tensei.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card carta-anime h-100">
+        <img src="imagenes/myheroacademiaCARD.jpg" class="card-img-top img-carta" alt="boku no hero">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Boku No Hero</h5>
+          <a href="hero.html" class="btn btn-reproducir w-100">Reproducir</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div> </div> 
+
+  <footer class="bg-dark text-light py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">&copy; © 2026 <strong>Animag</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#b8c2c1a9;
+    color:#f5f5f5;
+}
+    
+header h1{
+    font-size:28px;
+    color:#ffffff;
+}
+
+.contenedor{
+    display:flex;
+    min-height:calc(100vh - 70px);
+}
+
+aside{
+    width:220px;
+    background:#181818;
+    border-right:1px solid #2a2a2a;
+}
+
+aside ul{
+    list-style:none;
+}
+
+aside li{
+    padding:30px 20px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+aside li:hover{
+    background:#252525;
+}
+
+.activo{
+    background:#47588f;
+    color:white;
+}
+
+main{
+    flex:1;
+    padding:20px;
+}
+
+.card{
+    background:#b5c2c0a9;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.portada{
+    width:135px;
+    height:180px;
+    overflow:hidden;
+    border-radius:8px;
+}
+
+.portada img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.info{
+    flex:1;
+}
+
+.info h3{
+    margin-bottom:10px;
+    color:#000000;
+}
+
+.info p{
+    margin-bottom:10px;
+    color:#000000;
+}
+
+.barra{
+    width:100%;
+    height:15px;
+    background:#2d2d2d;
+    border-radius:20px;
+}
+
+.progreso{
+    height:100%;
+    background:#47588f;
+    border-radius:20px;
+}
+
+.menu{
+    border:none;
+    background:none;
+    font-size:25px;
+    cursor:pointer;
+    color:white;
+}
+
+.tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.tab{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#252525;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.tab:hover{
+    background:#333333;
+}
+
+.tab.activo{
+    background:#47588f;
+    color:white;
+}
+
+nav {
+  background-color: #1a1a1a;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #47588f;
+}
+.navbar-brand {
+  color: #ffffff;
+}
+.navbar-brand:hover {
+  color: #47588f;
+}
+
+.btn-buscar-custom {
+  color: #47588f;
+  background-color: transparent;
+  border: 1px solid #47588f;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-buscar-custom:hover {
+  color: #000000;
+  background-color: #2384d3;
+  border-color: #2384d3;
+  cursor: pointer;
+}
